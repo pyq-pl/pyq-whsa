@@ -1,0 +1,175 @@
+li#toplevel_page_pyqpl-general-settings {
+    background-color: #314960;
+}
+
+.pyqpl-relacje-inwestorskie {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+
+@media (min-width: 769px)
+{
+    .pyqpl-section-nav-relacje-inwestorskie {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .pyqpl-relacje-inwestorskie {
+        width: 33%;
+    }
+}
+@media (max-width: 768px)
+{
+    .pyqpl-section-nav-relacje-inwestorskie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .pyqpl-relacje-inwestorskie {
+        width: 100%;
+    }
+}
+
+.pyqpl-relacje-inwestorskie button, 
+.pyqpl-relacje-inwestorskie button:hover
+{
+    width: 100%;
+    transition: all 0.2s;
+    color: white;
+}
+
+.pyqpl-relacje-inwestorskie button:hover,
+.pyqpl-relacje-inwestorskie button.active
+{
+    background-color: #3DB35E !important;
+}
+
+.pyqpl-container-relacje-inwestorskie {
+    padding: 15px 25px;
+    opacity: 0;
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+.zolo-container {
+    padding: 0 !important;
+}
+
+.pyqpl-row-report-single {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 0px #3db35e;
+    margin-top: 35px;
+    position: relative;
+}
+
+.pyqpl-row-report-single-date {
+    position: absolute;
+    border-radius: 25px;
+    padding: 5px 12px;
+    font-size: 0.66em;
+    line-height: 1;
+    top: -12px;
+    right: 15px;
+    background-color: #009b2c;
+    color: white;
+    box-shadow: 0px 0px 10px white;
+}
+
+.pyqpl-row-report-single a {
+    font-weight: 500;
+}
+
+label.pyqpl-box-radio {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #d3d3d3;
+    color: white;
+    transition: all 0.2s
+}
+
+
+#pyqpl-form-select-year input[type="radio"] {
+    display: none;
+}
+
+#pyqpl-form-select-year input[type="radio"]:checked+label,
+#pyqpl-form-select-year label:hover
+{
+    background: #009b2c !important;
+    transition: all 0.2s;
+}
+
+.pagination.pagination-pyqpl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.pagination.pagination-pyqpl * {
+    width: auto !important;
+}
+
+#pyqpl-form-select-year {
+    margin-top: 1.2em;
+    margin-bottom: 2.6em;
+}
+
+.pyqpl-accordion-section-inner-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.pyqpl-accordion-item {
+    width: 100%;
+}
+
+span.pyqpl-accordion-title {
+    padding: 0.66em 1em;
+    width: 100%;
+    display: flex;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #515151;
+    color: white;
+    margin-top: 15px;
+}
+
+span.pyqpl-accordion-title.active,
+span.pyqpl-accordion-title:hover
+{
+    background-color: #009b2c;
+    color: white;
+    transition: all 0.2s;
+}
+
+.pyqpl-accordion-content {
+    margin-top: 5px;
+    padding: 0.75em calc(1em);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: none;
+}
+
+.pyqpl-accordion-content span {
+    font-weight: bold;
+}
+
+.pyqpl-accordion-content a:hover,
+.pyqpl-accordion-content a
+{
+    transition: all 0.2s;
+}
